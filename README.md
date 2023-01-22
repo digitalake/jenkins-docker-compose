@@ -1,4 +1,6 @@
-# jenkins-docker-compose
+# Jenkins-docker-compose
+
+>You can find jenkins repo by github link [here](https://github.com/digitalake/jenkins-test)
 
 ### Step 1 — Disabling the Setup Wizard
 
@@ -85,10 +87,6 @@ Finally, instead of hard-coding the __user ID and password__, you are using vari
 ### Step 5 — Setting Up Authorization
 
 After setting up the security realm, you must now configure the authorization strategy. In this step, you will use the __Matrix Authorization Strategy__ plugin to configure permissions for your admin user.
-
-By default, the Jenkins core installation provides us with three authorization strategies:
-  - unsecured: every user, including anonymous users, have full permissions to do everything
-  - legacy: emulates legacy Jenkins, where any users with the role admin is given full permissions, whilst other users, including anonymous users, are given read access.
 
 > __loggedInUsersCanDoAnything__: anonymous users are given either no access or read-only access. Authenticated users have full permissions to do everything. By allowing actions only for authenticated users, you are able to have an audit trail of which users performed which actions.
 
